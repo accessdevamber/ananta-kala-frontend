@@ -125,7 +125,7 @@ function RoomView({
   );
 }
 
-export default function KalaAndPranaGallery() {
+export default function AnantaKalaGallery() {
   const [artworks, setArtworks] = useState<Artwork[]>(starter);
   const [selected, setSelected] = useState<Artwork | null>(null);
   const [roomIndex, setRoomIndex] = useState(-1);
@@ -214,7 +214,7 @@ export default function KalaAndPranaGallery() {
     setRoomIndex((i) => ((i + 1 + d + rooms.length + 1) % (rooms.length + 1)) - 1);
   }
   const whatsAppMessage = encodeURIComponent(
-    'Hello, I would like to enquire about these Kala & Prana items:\n' +
+    'Hello, I would like to enquire about these Ananta Kala items:\n' +
       cart
         .map(
           (c) =>
@@ -236,9 +236,9 @@ export default function KalaAndPranaGallery() {
             setZoom(false);
           }}
         >
-          <span className="brand-mark">कला</span>
+          <span className="brand-mark">अ</span>
           <span>
-            <strong>KALA & PRANA</strong>
+            <strong>ANANTA KALA</strong>
             <small>SACRED ART FOR MODERN SPACES</small>
           </span>
         </button>
@@ -289,7 +289,7 @@ export default function KalaAndPranaGallery() {
         <>
           <section className="hero">
             <div>
-              <span className="eyebrow">THE KALA & PRANA COLLECTION</span>
+              <span className="eyebrow">THE ANANTA KALA COLLECTION</span>
               <h1>
                 Sacred art, <em>beautifully at home.</em>
               </h1>
@@ -404,7 +404,7 @@ export default function KalaAndPranaGallery() {
               </div>
             </div>
             <div className="purchase">
-              <span className="eyebrow">KALA & PRANA · {selected.deity.toUpperCase()}</span>
+              <span className="eyebrow">ANANTA KALA · {selected.deity.toUpperCase()}</span>
               <h1>{selected.name}</h1>
               <p className="description">{selected.description}</p>
               <div className="rating">
@@ -489,7 +489,7 @@ export default function KalaAndPranaGallery() {
         </main>
       )}
       <footer>
-        <strong>KALA & PRANA</strong>
+        <strong>ANANTA KALA</strong>
         <span>Original devotional art · Room mockup storefront prototype</span>
       </footer>
       {zoom && selected && (
